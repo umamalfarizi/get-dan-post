@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="_style.css" />
+
+    <title>Input Form</title>
+  </head>
+  <body>
+    <div id="form" class="pt-5">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col col-8 p-4 bg-light">
+            <form action="_action.php" method="POST">
+              <div class="form-group mb-2">
+                <label for="name">Nama Barang</label>
+                <input name="name" type="text" id="name" class="form-control" placeholder="Nama Barang" required />
+              </div>
+              <div class="form-group mb-2">
+                <label for="pilih Kota">Jenis Barang</label>
+                <select name="jenisBarang" id="jenisBarang" class="form-control" required>
+                  <option value="">~ Pilih Jenis Barang ~</option>
+                  <option value="pakaian">Pakaian</option>
+                  <option value="perabotan">Perabotan</option>
+                  <option value="makanan">Makanan</option>
+                  <option value="elektronik">Elektronik</option>
+                  <option value="aksesoris">Aksesoris</option>
+                </select>
+              </div>
+              <div class="form-group mb-2">
+                <label for="jumlahBarang">Jumlah Barang</label>
+                <input name="jumlahBarang" type="number" id="jumlahBarang" class="form-control" placeholder="Jumlah Barang" required />
+              </div>
+              <div class="form-group mb-2">
+                <label for="name">Harga Barang</label>
+                <input name="hargaBarang" type="text" id="hargaBarang" class="form-control" placeholder="Harga Barang" required />
+              </div>
+              <div class="form-group mb-2">
+                <label for="keterangan">Keterangan</label>
+                <textarea name="keterangan" id="keterangan" class="form-control" cols="" rows="3" placeholder="Keterangan lebih lanjut terkait barang" required></textarea>
+              </div>
+                <input name="submit" type="submit" value="Kirim" class="btn btn-primary" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
